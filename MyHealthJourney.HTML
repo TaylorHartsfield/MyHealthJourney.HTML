@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taylor Hartsfield</title>
+</head>
+<style>
+    body{
+        font-family:Cerebri Sans, Helvetica, Arial, sans-serif;
+        margin: 5% 7% 5% 7%;
+    }
+    section{
+        background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+        border: 8px solid white;
+        border-radius: 25px;
+        padding: 2% 4% 0;
+        box-shadow: 1px 2px 2px 2px rgb(0 0 0 / 20%);
+    }
+    h1{
+        font-weight: 650;
+        font-size: 45px;
+        line-height: 2px;
+        color: #ffffff;
+        text-align: left;
+        letter-spacing:2px;
+    }
+    h2{
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 2px;
+        color:white;
+        text-align:left;
+        padding-bottom: 2%;
+    }
+    img{
+        width: 20%;
+        padding: 2% 2% 0 2%;
+        vertical-align: top;
+        display: inline-block;
+        height: 100%;
+    }
+    
+    .CodedBy{
+        writing-mode: vertical-rl;
+        transform: rotateZ(180deg);
+        margin: auto;
+        padding: 10px 0px 150px 0px;
+        position: relative;
+        display: inline-block;
+    }
+    .raspberries{
+        color: white;
+        font-size: 10px;
+        letter-spacing: 2px;
+    }
+    a{
+        text-decoration: none;
+        cursor: pointer;
+        color: #fda084;
+    }
+    
+    .text{
+        vertical-align: top;
+        top: -60px;
+        display: inline-block;
+        position: relative;
+        width: 48%;
+        text-align: center;
+        line-height: 28px;
+        color: rgba(84,84,84, 1);
+        font-size: calc(0.13em+1vmin);
+    }
+    h4{
+        font-weight: 650;
+        font-size: calc(1.4em + 1vmin);
+        line-height: 40px;
+        color: white;
+        text-align: center;
+        letter-spacing: 2px;
+        margin: 6% 4% 0% 4%;
+    }
+    p{
+        display: block;
+
+    }
+    .pandemic{
+        font-weight: bold;
+    }
+    .change{
+        font-weight: bold;
+        color:white;
+    }
+    hr{
+        border: 0;
+        height: 1px;
+        width: 40%;
+        background-image: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,0.75), rgba(0,0,0,0));
+    }
+    .follow p{
+        margin: 2% 4% 2%;
+    }
+    button{
+        border-radius: 25px;
+        background-color: white;
+        padding: 1% 4%;
+        font-size: 15px;
+        color:#F2709B;
+        border-style: solid;
+        border-color:#ffffff;
+        cursor: pointer;
+        box-shadow: 1px 1px 1px 1px;
+        transition: all 200ms ease-in-out;
+    }
+    button:hover{
+        color:white;
+        background-color:#F2709B;
+        border-color:#F2709B;
+        box-shadow: none;
+    }
+</style>
+<body>
+    <section>
+    <h1>
+        MY HEALTH JOURNEY
+    </h1>
+    <h2>
+        FOCUSING ON MY MENTAL HEALTH AND OVERALL WELLNESS
+    </h2>
+    <div class = "CodedBy">
+        <h3 class = "raspberries">
+        CODED WITH LOVE AND RASPBERRIES BY <a href = "https://www.instagram.com/tmhartsfield/" target = "_blank">TAYLOR HARTSFIELD</a>
+    </h3>
+    </div>
+    <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/072/original/Screen_Shot_2022-04-17_at_1.05.38_PM-removebg-preview.png?1650222543" alt = "Before Picture">
+    <img src = "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/032/073/original/Screen_Shot_2022-04-17_at_1.04.38_PM-removebg-preview.png?1650222557" class = "after" alt = "After Picture">
+
+    <div class = "text">
+        <h4>MY PATH TO BETTER HEALTH</h4>
+        <p>
+            In early 2021, I decided to make a life-style change and found that the benefits of eating well were truly the best way to gain control of my mental health.
+            At the end of 2020, I was facing extreme depression. There was a wide range of factors contributing to this low feeling - <em>the<span class = "pandemic"> pandemic</span> was a huge one.</em>
+            I was consuming a double bottle of pinot noir <em>alone</em> almost every night of the week. Combined with terrible eating habits, and no energy or desire to ever leave my house, I was rapidly hitting the lowest point of my life.
+            <span class = "change">I knew something needed to change.</span>
+            I started with my diet - I decided to focus on eating more whole and raw foods and thinking about food as fuel for my body. "You are what you eat" is such a cliché, but I did find this to be so true once I consciously focused on how the foods I consumed made me feel.
+            I started this journey as most people do - "to lose weight" but, I quickly learned that this was so much more than that for me. I am now aware of how my mental health is deeply affected by what I consume.
+            Today I am in a much better state of mind - I have learned how to nuture my body to feel the best that I can. I am proud of my progress and I am able to dream so much bigger for myself than I ever thought possible. <br /> The left photo is from October 2020 - I weighed <strong>240lbs</strong>.<br /> The right photo is from April 2022 - I weigh <strong>160lbs</strong>.
+        </p>
+        <hr>
+        <div class = "follow">
+            <p>
+                <em>
+            Want to know more?
+        </em>
+            </p>
+            <button><strong>CLICK HERE</strong></button></div>
+    </div>
+</section>
+<script>
+    function getInfo(){
+        let name = prompt("What is your name?");
+        if (name.length === 0){
+            alert("Sorry, not a valid entry. Please try again.");
+        }
+        else{
+            let email = prompt("What is your email?");
+            let updatePage = document.querySelector("h4");
+            updatePage.innerHTML = `Thank you, ${name}! I will get in touch soon!`
+        }
+    }
+    function ClickHere(){
+        let button = document.querySelector("button")
+        button.addEventListener("click", getInfo)
+    }
+    ClickHere()
+</script>
+</body>
+</html>
